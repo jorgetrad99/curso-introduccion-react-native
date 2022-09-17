@@ -5,9 +5,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Curso React Native</Text>
-      <Saludar name='Jorge Trad' />
-      <Saludar name='Carlos de Granda' />
-      <Saludar name='Olivia Lopez' />
+      <Saludar />
+      <Saludar firstName='Joaquín' lastName='Perez' />
+      {/* <Saludar firstName='Jorge' lastName='Trad' />
+      <Saludar firstName='Jorge' lastName='Trad' /> */}
     </View>
   );
 }

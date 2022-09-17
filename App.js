@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginForm from './src/components/LoginForm';
+import Saludar from './src/components/Saludar';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola myApp... Prueba</Text>
-      <Text>Hola myApp...</Text>
-      <LoginForm />
+      <Text>Curso React Native</Text>
+      <Saludar name='Jorge Trad' />
+      <Saludar name='Carlos de Granda' />
+      <Saludar name='Olivia Lopez' />
     </View>
   );
 }

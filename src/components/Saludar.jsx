@@ -9,14 +9,14 @@ const Saludar = ({
     return <Text>Hola, {firstName} {lastName}</Text>
 }
 
-/* Saludar.defaultProps = {
+Saludar.defaultProps = {
     firstName: "Agustín",
     lastName: "Navarro Galdon",
-} */
+}
 
 Saludar.propTypes = {
     firstName: PropTypes.string.isRequired,
-    lastName: PropTypes.string,
+    lastName: PropTypes.string.isRequired,
 }
 
 export default Saludar;

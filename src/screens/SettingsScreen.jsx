@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, SafeAreaView } from 'react-native';
 
 const SettingsScreen = (props) => {
     const { navigation } = props;
@@ -8,14 +8,14 @@ const SettingsScreen = (props) => {
         navigation.navigate(pageName);
     };
     return (
-        <View>
+        <SafeAreaView>
             <Text>Estamos en SettingsScreen</Text>
             <Text>Estamos en SettingsScreen</Text>
             <Text>Estamos en SettingsScreen</Text>
             <Text>Estamos en SettingsScreen</Text>
             <Text>Estamos en SettingsScreen</Text>
             <Button onPress={() => goToPage("Home")} title='Ir a Home' />
-        </View>
+        </SafeAreaView>
     );
 }
 
